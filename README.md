@@ -26,13 +26,13 @@ is crucial as it helps your detection algorithm focus only on relevant parts of 
 #  Step 3: Detect Vehicles Using YOLOv8
 
 For vehicle detection within the defined ROI, you can utilize YOLOv8 (You Only Look Once), which is the fastest real-time object detection algorithm. You will need to install the necessary libraries and download a pre-trained YOLOv8 model. The following is an outline of how to implement it:
-  # Install YOLOv8: Use pip to install necessary libraries.
+  #Install YOLOv8: Use pip to install necessary libraries.
   pip install ultralytics
-  # Load and Run YOLOv8: python code
+  #Load and Run YOLOv8: python code
   from ultralytics import YOLO
-  # Load model
+  #Load model
   model = YOLO('yolov8n.pt')
-  # Perform inference on the captured frame
+  #Perform inference on the captured frame
   results = model(frame)
 
 # Step 4: Alert System Using Arduino 
